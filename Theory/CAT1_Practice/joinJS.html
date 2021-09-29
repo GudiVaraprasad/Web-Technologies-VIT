@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Joiner JS</title>
+</head>
+
+<body>
+  <input type="text" id="input1">
+  <input type="text" id="input2">
+  <input type="text" id="output">
+  <button onclick="join()" type="submit"> Submit</button>
+  <script>
+    function join() {
+      var input1 = document.getElementById("input1").value;
+      var input2 = document.getElementById("input2").value;
+      var output = input1 + " " + input2;
+      document.getElementById("output").value = output;
+    }
+  </script>
+</body>
+
+</html>
