@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS Question</title>
+</head>
+
+<body>
+  <input type="text" id="input">
+  <button onclick="func1()" type="submit"> First Button</button>
+  <button onclick="func2()" type="submit"> Second Button</button>
+  <script>
+    function func1() {
+      var input = document.getElementById("input");
+      input.style.color = "red";
+      input.style.backgroundColor = "pink";
+      input.style.textTransform = "uppercase";
+    }
+    function func2() {
+      var input = document.getElementById("input");
+      input.style.color = "yellow";
+      input.style.backgroundColor = "red";
+      input.style.textTransform = "uppercase";
+    }
+  </script>
+</body>
+
+</html>

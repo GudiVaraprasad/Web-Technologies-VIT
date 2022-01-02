@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>3 DIVs</title>
+    <style>
+        div {
+            color: white;
+            padding: 20px;
+            position: relative;
+            float: left;
+            border: 3px solid black;
+        }
+
+        .div1 {
+            background-color: green;
+            z-index: -1;
+        }
+
+        .div2 {
+            background-color: salmon;
+            margin-top: 90px;
+            left: -20px;
+        }
+
+        .div3 {
+            background-color: blue;
+            left: -40px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        Module 1
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Grids</li>
+        </ul>
+    </div>
+
+    <div class="div2">
+        Module 2
+        <ol>
+            <li>Javascript</li>
+            <li>DOM</li>
+            <li>AJAX
+                <ul>
+                    <li>xml</li>
+                    <li>json</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="div3">
+        Module 3
+        <ul>
+            <li>XAMPP-WEBSERVER</li>
+            <li>PHP</li>
+            <li>forms</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

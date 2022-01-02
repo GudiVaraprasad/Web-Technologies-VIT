@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="./favourites.js"></script>
+
+<body ng-app="fav">
+  <div ng-controller="favsubject">
+    FavouriteSubject <input type="text" ng-model="addSub" />
+    <button ng-click="addSubject()">Add</button>
+    <button ng-click="removeSubject()">Remove</button> <br /><br />
+    <div ng-controller="favmovie">
+      FavouriteMovie <input type="text" ng-model="addMov" />
+      <button ng-click="addMovie()">Add</button>
+      <button ng-click="removeMovie()">Remove</button> <br />
+      <ul>
+        <li ng-repeat="x in subnames">{{x}}</li>
+        <li ng-repeat="x in movnames">{{x}}</li>
+      </ul>
+    </div>
+  </div>
+  <br />
+</body>
+
+</html>

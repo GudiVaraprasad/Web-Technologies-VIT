@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form Validation</title>
+</head>
+
+<body style="color: white; background-color: rgb(85, 3, 67);">
+  <h1>Get in touch</h1>
+  <form>
+    Name*<br>
+    <input type="text" id="name"> <br><br>
+    Email*<br>
+    <input type="text" id="email"> <br><br>
+    Phone*<br>
+    <input type="text" id="phone"> <br><br>
+    Message*<br>
+    <textarea id="msg" cols="100" rows="10"></textarea> <br><br>
+    <button onclick="validateform()" type="submit" style="background-color: orange; color: white;"> Submit</button>
+  </form>
+
+  <script>
+
+    function validateform() {
+      var myname = document.getElementById("name");
+      var myemail = document.getElementById("email");
+      var myphone = document.getElementById("phone");
+      var mymsg = document.getElementById("msg");
+      if (myname.value == '' || myemail.value == '' || myphone.value == '' || mymsg.value == '') {
+        alert("Please fill required fields.");
+      }
+      else {
+        var txtmsg = mymsg.value;
+        if (txtmsg.length < 140) {
+          alert("VALIDATION SUCCESSFUL");
+        }
+        else {
+          alert("Message is too long.");
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

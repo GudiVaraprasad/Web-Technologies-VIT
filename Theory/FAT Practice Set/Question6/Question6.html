@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html style="zoom: 250%;" lang="en">
+
+<head>
+    <title>HTML TABLES</title>
+    <style>
+        .table1 {
+            border: 7px solid darkgreen;
+            border-spacing: 8px;
+            width: 70%;
+        }
+
+        .table2 {
+            border: 4px solid purple;
+        }
+
+        .table3 {
+            border: 4px solid lightpink;
+        }
+
+        .cell11,
+        .cell12,
+        .cell14 {
+            border: 1px solid darkgreen;
+            height: 100px;
+        }
+
+        .cell13 {
+            border: 1px solid darkgreen;
+            height: 100px
+        }
+
+        .cell21_13 {
+            color: salmon;
+            border: 1px solid lightpink;
+        }
+
+        .cell22_13 {
+            color: salmon;
+            border: 1px solid lightpink;
+        }
+
+        .cell23_13 {
+            color: salmon;
+            border: 1px solid lightpink;
+        }
+
+        .cell22 {
+            color: salmon;
+            border: 1px solid purple;
+        }
+
+        .cell23 {
+            color: salmon;
+            border: 1px solid purple;
+        }
+
+        .cell24 {
+            color: salmon;
+            border: 1px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table1">
+        <tr>
+            <th class="cell11"> cell 11 </th>
+            <th class="cell12"> cell 12
+                <table align="center" class="table2">
+                    <tr>
+                        <th class="cell22" colspan="2"> cell 22 </th>
+                    </tr>
+                    <tr>
+                        <td class="cell23"> cell 23 </td>
+                        <td class="cell24"> cell 24 </td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+        <tr>
+            <th class="cell13"> cell 13
+                <table align="center" class="table3">
+                    <tr>
+                        <td class="cell21_13"> cell 21 </td>
+                        <td class="cell22_13" rowspan="2"> cell 22 </td>
+                    </tr>
+                    <tr>
+                        <td class="cell23_13"> cell 23 </td>
+                    </tr>
+                </table>
+            </th>
+            <th class="cell14"> cell 14 </th>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="./fruitsveggies.js"></script>
+  <body ng-app="application">
+    <div ng-controller="fruits">
+      AddFruit <input type="text" ng-model="addMe" />
+      <button ng-click="addItem()">Add</button>
+      <button ng-click="viewItem()">View</button> <br /><br />
+      <div ng-controller="vegetables">
+        AddVeg <input type="text" ng-model="addMe2" />
+        <button ng-click="addItem2()">Add</button>
+        <button ng-click="viewItem2()">View</button> <br />
+        <ul>
+          <li ng-repeat="x in fruitnames">{{x}}</li>
+          <li ng-repeat="x in vegnames">{{x}}</li>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
