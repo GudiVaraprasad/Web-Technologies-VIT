@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  zoom: 170%;
+  overflow: hidden;
+  background-color: bisque;
+}
+
+h1 {
+  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cont {
+  display: flex;
+}
+
+.stdData {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 1rem;
+  flex: 0.8;
+}
+
+.listids {
+  font-size: 0.8rem;
+  font-weight: 200;
+  border-left: 0.1rem solid #222;
+  padding: 0.6rem;
+  text-align: center;
+  width: 20%;
+}
+
+.btn1 {
+  background-color: palevioletred;
+  border: none;
+  color: rgb(8, 0, 0);
+  padding: 0.2rem 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.3rem 0.12rem;
+  cursor: pointer;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+
+thead {
+  background-color: #222;
+  color: aliceblue;
+}
+
+span {
+  color: red;
+  font-weight: 800;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19BCE7048 - TASK 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="cont">
+    <div class="stdData">
+       <center>
+          <h1><u>STUDENT LOGIN</u></h1>
+          <br />
+          <form method="GET" action="19BCE7048.php">
+             <table border="0" cellpadding="10" cellspacing="5">
+                <tr align="left">
+                   <th>User Name<span> *</span></th>
+                   <th>
+                      <input
+                         name="userid"
+                         id="userid"
+                         type="text"
+                         required pattern="[A-Za-z0-9 ]+"
+                         autocomplete="off"
+                         />
+                   </th>
+                </tr>
+                <tr align="left">
+                   <th>Password<span> *</span></th>
+                   <th>
+                      <input
+                         name="password"
+                         id="password"
+                         type="password"
+                         required pattern="[A-Za-z0-9 ]+" title="This field is required"
+                         autocomplete="off"
+                         />
+                   </th>
+                </tr>
+             </table>
+             <br />
+       </center>
+       <div align="center">
+       <button class="btn1">Get Details</button>
+       </div>
+       <br>
+       </form>
+      </div>
+       <br>
+       <div class="listids">
+         <h2><u>Test Details</u></h2>
+         <table align="center" border="1" cellpadding="5" cellspacing="1">
+            <tr align="left">
+               <th style="background-color: palevioletred;">User ID</th>
+               <th style="background-color: palevioletred;">Password</th>
+            </tr>
+            <tr align="left">
+               <th>rudra</th>
+               <th>rudra123</th>
+            </tr>
+            <tr align="left">
+               <th>gudi</th>
+               <th>gudi123</th>
+            </tr>
+            <tr align="left">
+               <th>admin</th>
+               <th>admin</th>
+            </tr>
+            <tr align="left">
+               <th>root</th>
+               <th>toor</th>
+            </tr>
+            <tr align="left">
+               <th>test2021</th>
+               <th>test2021</th>
+            </tr>
+         </table>
+         <h4 align="center" style="color: red;">Details other than these will not display anything..</h4>
+       </div>
+      </div>
+ </body>
+</html>

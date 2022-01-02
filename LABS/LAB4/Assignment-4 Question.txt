@@ -1,0 +1,26 @@
+Assignment-10Marks?
+Faculty Registration Form
+-All fields are Mandetory
+Use CSS for styles
+
+EmpId-Number-Size(6 digits)
+Validations:Check whether entered input is number or not?
+Number of digits in that number
+Start the number with 5
+
+EmpName-Characters(Size:10-40)
+No Special Characters
+Size validation
+
+Gender-Radio Button
+
+DOB-(DD-MM-YYYY)
+
+DOJ-(DD-XXX-YYYY)
+
+MailId
+@,.,Proper Domain
+
+Mobile Number
+10 digits
+Any character entered

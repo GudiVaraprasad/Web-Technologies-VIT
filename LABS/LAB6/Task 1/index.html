@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19BCE7048 - Task 1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="empData">
+       <center>
+          <h1><u>EMPLOYEE DATA</u></h1>
+          <br />
+          <form method="POST" action="createTable.php">
+             <table border="0" cellpadding="10" cellspacing="5">
+                <tr align="left">
+                   <th>Employee Number<span> *</span></th>
+                   <th>
+                      <input
+                         name="empno"
+                         id="empno"
+                         type="number"
+                         required
+                         autocomplete="off"
+                         />
+                   </th>
+                </tr>
+                <tr align="left">
+                   <th>Employee Name<span> *</span></th>
+                   <th>
+                      <input
+                         name="empname"
+                         id="empname"
+                         type="text"
+                         required pattern="[A-Za-z ]+" title="This field is required"
+                         autocomplete="off"
+                         />
+                   </th>
+                </tr>
+                <tr align="left">
+                   <th>DOB<span> *</span></th>
+                   <th>
+                    <input
+                       name="dob"
+                       id="dob"
+                       type="date"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+                <tr align="left">
+                    <th>DOJ<span> *</span></th>
+                   <th>
+                    <input
+                       name="doj"
+                       id="doj"
+                       type="date"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+                <tr align="left">
+                    <th>Designation<span> *</span></th>
+                   <th>
+                    <input
+                       name="designation"
+                       id="designation"
+                       type="text"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+                <tr align="left">
+                    <th>Department<span> *</span></th>
+                   <th>
+                    <input
+                       name="department"
+                       id="department"
+                       type="text"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+                <tr align="left">
+                    <th>Salary<span> *</span></th>
+                   <th>
+                    <input
+                       name="salary"
+                       id="salary"
+                       type="number"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+             </table>
+             <br />
+       </center>
+       <div align="center">
+       <button class="btn1">Submit</button>
+       </div>
+       <br>
+    </form>
+    <form align="center" action="getDetails.php" method="POST">
+        <button class="btn2">Get Details</button>
+    </form>
+    </div>
+ </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>19BCE7048 - Client Side Validation</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body scroll="no">
+      <div class="empform">
+         <center>
+            <h1><u>FACULTY REGISTRATION FORM</u></h1>
+            <br />
+            <form name="myform" action="" onsubmit="validate()">
+               <table border="0" cellpadding="10" cellspacing="5">
+                  <tr align="left">
+                     <th><span>* </span>Employee ID</th>
+                     <th>
+                        <input
+                           name="empid"
+                           id="empid"
+                           type="text"
+                           autocomplete="off"
+                           />
+                     </th>
+                  </tr>
+                  <tr align="left">
+                     <th><span>* </span>Employee Name</th>
+                     <th>
+                        <input
+                           name="empname"
+                           id="empname"
+                           type="text"
+                           autocomplete="off"
+                           />
+                     </th>
+                  </tr>
+                  <tr align="left">
+                     <th><span>* </span>Gender</th>
+                     <th>
+                        <input type="radio" name="gender" id="male" /> Male <br />
+                        <input type="radio" name="gender" id="female" /> Female
+                     </th>
+                  </tr>
+                  <tr align="left">
+                     <th><span>* </span> DOB</th>
+                     <th>
+                        <input
+                           type="date"
+                           name="dob"
+                           id="dob"
+                           />
+                     </th>
+                  </tr>
+                  <tr align="left">
+                     <th><span>* </span>DOJ</th>
+                     <th>
+                        <input
+                           type="text"
+                           name="doj"
+                           id="doj"
+                           placeholder="dd-mmm-yyyy"
+                           />
+                     </th>
+                  </tr>
+                  <tr align="left">
+                     <th><span>* </span>Email id</th>
+                     <th>
+                        <input
+                           name="email"
+                           id="email"
+                           type="text"
+                           autocomplete="off"
+                           />
+                     </th>
+                  </tr>
+                  <tr align="left">
+                     <th><span>* </span>Mobile Number</th>
+                     <th>
+                        <input
+                           name="mobile"
+                           id="mobile"
+                           type="text"
+                           autocomplete="off"
+                           />
+                     </th>
+                  </tr>
+               </table>
+               <br />
+         </center>
+         <div align="center">
+         <button class="btn1">Submit</button>
+         <button onclick="reset()" class="btn2">Reset</button>
+         </div>
+         <br>
+         </form>
+      </div>
+   </body>
+   <script src="script.js"></script>
+</html>

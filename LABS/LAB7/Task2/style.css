@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.4rem;
+  background-color: rgb(176, 219, 74);
+  /* zoom: 110%; */
+  /* overflow: hidden; */
+}
+
+h1,
+h2 {
+  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.empData {
+  border: 0.2rem solid #222;
+  background-color: rgb(132, 219, 74);
+}
+
+.btn1 {
+  background-color: rgb(27, 51, 116);
+  border: none;
+  color: white;
+  padding: 0.2rem 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.3rem 0.12rem;
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: rgb(223, 61, 12);
+  border: none;
+  color: white;
+  padding: 0.2rem 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.3rem 0.12rem;
+  cursor: pointer;
+}
+
+.btn3 {
+  background-color: rgb(223, 61, 12);
+  border: none;
+  color: white;
+  padding: 0.2rem 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.5rem;
+  margin: 0.3rem 0.12rem;
+  cursor: pointer;
+}
+
+span {
+  color: red;
+  font-weight: 800;
+}

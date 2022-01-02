@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19BCE7048 - Student Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="stdData">
+       <center>
+          <h1><u>STUDENT DATA</u></h1>
+          <br />
+          <form method="POST" action="19BCE7048.php">
+             <table border="0" cellpadding="10" cellspacing="5">
+                <tr align="left">
+                   <th>Roll No.<span> *</span></th>
+                   <th>
+                      <input
+                         name="rollno"
+                         id="rollno"
+                         type="number"
+                         required
+                         autocomplete="off"
+                         />
+                   </th>
+                </tr>
+                <tr align="left">
+                   <th>Student Name<span> *</span></th>
+                   <th>
+                      <input
+                         name="sname"
+                         id="sname"
+                         type="text"
+                         required pattern="[A-Za-z ]+" title="This field is required"
+                         autocomplete="off"
+                         />
+                   </th>
+                </tr>
+                <tr align="left">
+                   <th>Subject 1 Marks<span> *</span></th>
+                   <th>
+                    <input
+                       name="s1marks"
+                       id="s1marks"
+                       type="number"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+                <tr align="left">
+                    <th>Subject 2 Marks<span> *</span></th>
+                   <th>
+                    <input
+                       name="s2marks"
+                       id="s2marks"
+                       type="number"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+                <tr align="left">
+                    <th>Subject 3 Marks<span> *</span></th>
+                   <th>
+                    <input
+                       name="s3marks"
+                       id="s3marks"
+                       type="number"
+                       required
+                       autocomplete="off"
+                       />
+                   </th>
+                </tr>
+             </table>
+             <br />
+       </center>
+       <div align="center">
+       <button class="btn1">Submit</button>
+       <button onclick="reset()" class="btn2">Reset</button>
+       </div>
+       <br>
+       </form>
+    </div>
+ </body>
+</html>
