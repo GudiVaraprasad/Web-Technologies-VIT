@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19BCE7048 - JS Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="gvp">
+    <center>
+      <h1><u>JAVASCRIPT CALCULATOR</u></h1>
+      <!-- <input name="num1" id="numx" type="text" /> -->
+      <br />
+      <table border="0" cellpadding="10" cellspacing="5">
+        <tr>
+          <th>First Number :</th>
+          <th>
+            <input
+              name="num1"
+              id="num1"
+              type="text"
+              autocomplete="off"
+              required
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>Second Number :</th>
+          <th>
+            <input
+              name="num2"
+              id="num2"
+              type="text"
+              autocomplete="off"
+              required
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>Result :</th>
+          <th>
+            <input
+              name="ans"
+              id="ans"
+              type="text"
+              autocomplete="off"
+              disabled
+            />
+          </th>
+        </tr>
+      </table>
+      <br />
+      <div>
+        <button onclick="add()" class="btn1">+</button>
+        <button onclick="sub()" class="btn2">-</button>
+        <button onclick="mul()" class="btn3">*</button>
+        <button onclick="div()" class="btn4">/</button>
+        <button onclick="mod()" class="btn5">%</button>
+        <button onclick="reset()" class="btn6">reset</button>
+      </div>
+    </div>
+    </center>
+  </body>
+  <script src="script.js"></script>
+</html>
